@@ -5,6 +5,8 @@
     <title>Baysaa AU. – Futuristic Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        /* --- General Styles --- */
         body {
             font-family: 'Orbitron', sans-serif;
             background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
@@ -12,6 +14,14 @@
             margin: 0;
             padding: 0;
         }
+
+        /* Prevent blinking cursor */
+        body, .container, .glow-box, ul, li, p {
+            user-select: none;          /* prevents accidental text selection */
+            outline: none;              /* removes focus outline */
+            caret-color: transparent;   /* hides blinking caret */
+        }
+
         .container {
             max-width: 900px;
             margin: 50px auto;
@@ -22,6 +32,7 @@
             border: 1px solid rgba(0, 255, 255, 0.5);
             position: relative;
         }
+
         .student-id {
             position: absolute;
             top: 20px;
@@ -30,10 +41,12 @@
             color: cyan;
             text-shadow: 0 0 8px cyan;
         }
+
         .profile {
             text-align: center;
             margin-top: 20px;
         }
+
         .profile img {
             width: 180px;
             height: 180px;
@@ -43,16 +56,19 @@
             box-shadow: 0 0 25px cyan;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .profile img:hover {
             transform: scale(1.05);
             box-shadow: 0 0 35px #00ffff;
         }
+
         h1 {
             text-align: center;
             color: #00ffff;
             text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
             margin-top: 20px;
         }
+
         h2 {
             color: #ff00ff;
             text-shadow: 0 0 8px #ff00ff;
@@ -60,18 +76,22 @@
             padding-bottom: 5px;
             margin-top: 30px;
         }
+
         p, ul {
             line-height: 1.8;
             font-size: 1.1em;
         }
+
         ul {
             list-style: none;
             padding-left: 0;
         }
+
         ul li::before {
             content: "✦ ";
             color: cyan;
         }
+
         .contact {
             background: rgba(0, 255, 255, 0.1);
             border: 1px solid cyan;
@@ -81,11 +101,13 @@
             margin-top: 30px;
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
         }
+
         .contact a {
             color: #ffcc00;
             text-decoration: none;
             font-weight: bold;
         }
+
         .glow-box {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.2);
